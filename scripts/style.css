@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Pricedown';
+    src: url('../fonts/Pricedown.otf') format('opentype'),
+         url('../fonts/Pricedown.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gasalt';
+    src: url('../fonts/Gasalt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Pricedown', sans-serif;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+    object-fit: contain;
+    /* 'contain' ensures the entire video is visible within the container */
+}
+
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.video-container:after {
+    content: '';
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+}
+
+#info-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* No need for fixed width/height here unless desired */
+    width: 80%;
+    height: auto;
+    z-index: 2;
+    color: white;
+    /* Remove flex styles since we're using absolute positioning for children */
+    text-align: center;
+}
+
+/* All .info-box elements share the same absolute position */
+.info-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gasalt', sans-serif; 
+    color: white;
+    padding: 15px 25px;
+    margin: 0; /* Remove extra margin to avoid shifting */
+    border-radius: 5px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#info-1 {
+    font-family: 'Pricedown', sans-serif;
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.info-box img {
+    max-width: 600px;
+    display: block;
+    margin: 0 auto 10px;
+}
