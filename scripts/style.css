@@ -98,7 +98,13 @@ body, html {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-  }
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 1s ease-in; /* Fade-in effect */
+}
+
+.volume-container.fade-in {
+    opacity: 1; /* End with opacity 1 */
+}
 
   .vslider {
     position: relative;

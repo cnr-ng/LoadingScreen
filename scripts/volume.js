@@ -4,6 +4,9 @@ $(document).ready(function () {
         $slider = $("<div class='vslider'><ul class='vslider_sticks'></ul></div>").appendTo($input.parent());
     const audio = $("#backgroundAudio")[0];
 
+    // show volume
+    $(".volume-container").addClass("fade-in");
+
     // Hide the default input range
     $input.hide();
 
