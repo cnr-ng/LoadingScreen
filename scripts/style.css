@@ -96,13 +96,14 @@ body, html {
 
 .volume-container {
     position: fixed;
-    bottom: 20px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
 
     /* Initially hidden */
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
+    cursor: grab;
     /* animation-delay: 0.5s; */
 }
 
@@ -170,20 +171,17 @@ body, html {
 
   .credits {
     position: fixed;
-    bottom: 3px;
+    bottom: 5px;
     left: 50%;
     transform: translate(-50%, 0%);
-    color: #808080;
+    color: #666666;
     font-family: Arial, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     z-index: 2;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
     user-select: none;
-    /* Initially hidden */
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
-    /* animation-delay: 1s; */
 }
 
 @keyframes fadeIn {
