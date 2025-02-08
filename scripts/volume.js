@@ -5,7 +5,7 @@ $(document).ready(function () {
     const audio = $("#backgroundAudio")[0];
 
     // show volume
-    $(".volume-container").addClass("fade-in");
+    // $(".volume-container").addClass("fade-in");
 
     // Hide the default input range
     $input.hide();
@@ -18,7 +18,7 @@ $(document).ready(function () {
 
     // Set the audio volume and log the value for debugging
     audio.volume = savedVolume;
-    console.log('Initial volume set to:', audio.volume); // Debugging statement
+    // console.log('Initial volume set to:', audio.volume); // Debug
 
     // Check if the audio is playing
     if (audio.paused) {
