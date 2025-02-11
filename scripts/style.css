@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Pricedown';
-    src: url('/dev/fonts/pricedown.otf') format('opentype'),
-         url('/dev/fonts/pricedown.ttf') format('truetype');
+    src: url('scripts/fonts/pricedown.otf') format('opentype'),
+         url('scripts/fonts/pricedown.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
