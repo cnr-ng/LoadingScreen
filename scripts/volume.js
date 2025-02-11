@@ -20,9 +20,10 @@ $(document).ready(function () {
     audio.volume = savedVolume;
     // console.log('Initial volume set to:', audio.volume); // Debug
 
+
     // Check if the audio is playing
     if (audio.paused) {
-        console.log('Audio is paused. Attempting to play.');
+        // console.log('Audio is paused. Attempting to play.');
         audio.play(); // Try to play if it's paused
     }
 
@@ -44,7 +45,7 @@ $(document).ready(function () {
         audio.volume = percent;
 
         // Log the volume to check it's being applied correctly
-        console.log('Volume set to:', audio.volume); // Debugging statement
+        // console.log('Volume set to:', audio.volume); // Debugging statement
 
         // Save volume to localStorage
         localStorage.setItem("volume", percent);
