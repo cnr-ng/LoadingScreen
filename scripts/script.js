@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const videos = {
         LEFT: shuffleArray(['LEFT_1.mp4', 'LEFT_2.mp4', 'LEFT_3.mp4', 'LEFT_4.mp4', 
-                           'LEFT_5.mp4', 'LEFT_6.mp4', 'LEFT_7.mp4', 'LEFT_8.mp4',]),
+                           'LEFT_5.mp4', 'LEFT_6.mp4', 'LEFT_7.mp4', 'LEFT_8.mp4', 'LEFT_9.mp4']),
         RIGHT: shuffleArray(['RIGHT_1.mp4', 'RIGHT_2.mp4', 'RIGHT_3.mp4', 'RIGHT_4.mp4', 
-                            'RIGHT_5.mp4', 'RIGHT_6.mp4', 'RIGHT_7.mp4', 'RIGHT_8.mp4', 'RIGHT_9.mp4'])
+                            'RIGHT_5.mp4', 'RIGHT_6.mp4', 'RIGHT_7.mp4', 'RIGHT_8.mp4', 'RIGHT_9.mp4', 'RIGHT_10.mp4'])
     };
 
     let chooseLeftNext = true;
